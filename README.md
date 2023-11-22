@@ -21,7 +21,7 @@ Client are often challenged by fast and easy onboarding of Wifi product to a giv
 ## Solution block diagram
 ### Solution Overview
 
-The Solution code is written as a FreeRTOS based MPLAB Harmony3 solution that leverages the system service-based architecture of PIC32MZ W1. The Solution can connect to any of the three Clouds- AWS, Azure or test.mosquitto.org without the need for recompiling of the image.
+The RNWF11 firmware can connect to any of the three Clouds- AWS, Azure or test.mosquitto.org without simple AT configuration commands.
 
 ## Evaluating the Solution
 
@@ -35,13 +35,8 @@ Perform the following steps:
 - Parity : None
 - Stop : 1 Bit
 - Flow Control : None
-
-**Note**: The UART used in this case is UART2.
-
 4. All the configurations on the device will be done using AT Cmds via the UART. The details regarding the supported AT CMDs can be found in the document ATCommandReference.pdf in the "doc" folder
-
 5. Configure the home AP credentials using the AT Cmds
-
     Example:
     
         AT+WSTAC=1,"DEMO_AP"
@@ -53,7 +48,6 @@ Perform the following steps:
         AT+WSTA=1
    
 6. The device connects to the Wi-Fi and the IP address is assigned, and relevant AT Cmd response is sent to UART.
-
 Example:
 
         +WSTALU:"42:2C:62:CC:C0:0B",11
@@ -61,7 +55,6 @@ Example:
         +TIME:2,3864185092
         
 7. Configure the device to connect to Cloud - in this case either of AWS or Azure or test.mosquitto.org
-
 Example:
 
         AT+MQTTC=1,"youramazonaws.com"
