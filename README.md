@@ -1,7 +1,21 @@
 # RNWF11_Beta
-Repository to enable evaluation of RNWF11
-
-Client are often challenged by fast and easy onboarding of Wifi product to a given cloud. Microchip aims to make all these steps easy for the customer. This Solution allows easy connectivity to AWS, Azure and test.mosquitto.org with RNWF11.
+The Microchip's RNWF11 Wi-Fi™ Modules are an attach solution which can enable Wi-Fi and IoT Cloud
+connectivity on any existing designs. The RNWF11 modules are designed to reduce the user application
+development time by providing ASCII based AT Commands over the UART interface to expose its features and
+capabilities. As the RNWF11 handles all the Wi-Fi and IoT cloud related functionality, even a simple 8-bit Host
+microcontroller can have the cloud connectivity with minimal hardware requirements. The ASCII AT command
+interface provides an easier evaluation of the board using any standard serial port application on a PC.
+The RNWF11 Add On Board is an efficient, low-cost development platform to evaluate and demonstrate the
+features and functionality of Microchip’s low-power Wi-Fi RNWF11PC Module. It can be used with a Host PC
+via USB interface without the need of an additional hardware accessory. This is compliant to the mikroBUS™
+Standard. The Add On Board can be plugged easily on the host board and can be controlled by Host
+Microcontroller Unit (MCU) with AT commands through UART.
+The RNWF11 Add On Board offers:
+1. Easy-to-use platform to speed-up design concepts to revenue with the low-power Wi-Fi RNWF11PC Module:
+• Host PC via USB Type-C™ interface.
+• Host board supporting mikroBUS socket.
+2. ATECC608B Crypto Authentication Trust Flex IC device for secure and authenticated cloud connection.
+3. Pre-programmed, easy- to-use, low-cost Wi-Fi adapter.
 
 ## Features
 
