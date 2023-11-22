@@ -15,8 +15,8 @@ Client are often challenged by fast and easy onboarding of Wifi product to a giv
 ## Hardware Setup
 ### Hardware Requirements
 
-    RNWF11 Add On board
-    Access Point with Internet
+- RNWF11 Add On board
+- Access Point with Internet
 
 ## Solution block diagram
 ### Solution Overview
@@ -27,25 +27,18 @@ The Solution code is written as a FreeRTOS based MPLAB Harmony3 solution that le
 
 Perform the following steps:
 
-    Connect the RNWF11 Add On board to your PC/ Host MCU.
+1. Connect the RNWF11 Add On board to your PC/ Host MCU.
+2. Open the Terminal application (Ex.:Tera term) on the computer.
+3. Connect to the "USB to UART" COM port and configure the serial settings as follows:
+- Baud : 230400
+- Data : 8 Bits
+- Parity : None
+- Stop : 1 Bit
+- Flow Control : None
 
-    Open the Terminal application (Ex.:Tera term) on the computer.
+**Note**: The UART used in this case is UART2.
 
-    Connect to the "USB to UART" COM port and configure the serial settings as follows:
-
-        Baud : 230400
-
-        Data : 8 Bits
-
-        Parity : None
-
-        Stop : 1 Bit
-
-        Flow Control : None
-
-    Note: The UART used in this case is UART2.
-
-    All the configurations on the device will be done using AT Cmds via the UART. The details regarding the supported AT CMDs can be found in the document ATCommandReference.pdf in the "doc" folder
+4. All the configurations on the device will be done using AT Cmds via the UART. The details regarding the supported AT CMDs can be found in the document ATCommandReference.pdf in the "doc" folder
 
     Configure the home AP credentials using the AT Cmds
 
