@@ -12,8 +12,8 @@ Standard. The Add On Board can be plugged easily on the host board and can be co
 Microcontroller Unit (MCU) with AT commands through UART.
 The RNWF11 Add On Board offers:
 1. Easy-to-use platform to speed-up design concepts to revenue with the low-power Wi-Fi RNWF11PC Module:
-    Host PC via USB Type-C™ interface.
-    Host board supporting mikroBUS socket.
+- Host PC via USB Type-C™ interface.
+- Host board supporting mikroBUS socket.
 2. ATECC608B Crypto Authentication Trust Flex IC device for secure and authenticated cloud connection.
 3. Pre-programmed, easy- to-use, low-cost Wi-Fi adapter.
 
