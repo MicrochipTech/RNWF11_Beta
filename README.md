@@ -5,17 +5,12 @@ Client are often challenged by fast and easy onboarding of Wifi product to a giv
 
 ## Features
 
-    Easy to learn ASCII AT commands for adding Wi-Fi and Cloud connectivity to any processor
-
-    Mutual authentication supported with AWS and Azure
-
-    Server authentication supported for test.mosquitto.org
-
-    Designed for RNWF11 module with integrated Trust&Go (TNG) or Trustflex (Trustflex is mounted on the RNWF11 EVB, which makes it very easy for development)
-
-    Ready to use RNWF11 module to connect to different cloud vendors by just changing the configuration values (single image supports connectivity with AWS / Azure / test.mosquitto.org)
-
-    Supports MQTT, Socket programming(TCP/ UDP), SNTP, TLS (v1.2), ICMP, IGMP, DNS, DHCP, WPA3, Loading Certificates via UART, WiFi Provisioning.
+1. Easy to learn ASCII AT commands for adding Wi-Fi and Cloud connectivity to any processor
+2. Mutual authentication supported with AWS and Azure
+3. Server authentication supported for test.mosquitto.org
+4. Designed for RNWF11 module with integrated Trust&Go (TNG) or Trustflex (Trustflex is mounted on the RNWF11 EVB, which makes it very easy for development)
+5. Ready to use RNWF11 module to connect to different cloud vendors by just changing the configuration values (single image supports connectivity with AWS / Azure / test.mosquitto.org)
+6. Supports MQTT, Socket programming(TCP/ UDP), SNTP, TLS (v1.2), ICMP, IGMP, DNS, DHCP, WPA3, Loading Certificates via UART, WiFi Provisioning.
     
 ## Hardware Setup
 ### Hardware Requirements
