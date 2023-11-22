@@ -3,7 +3,7 @@ Repository to enable evaluation of RNWF11
 
 Client are often challenged by fast and easy onboarding of Wifi product to a given cloud. Microchip aims to make all these steps easy for the customer. This Solution allows easy connectivity to AWS, Azure and test.mosquitto.org with RNWF11.
 
-Features
+## Features
 
     Easy to learn ASCII AT commands for adding Wi-Fi and Cloud connectivity to any processor
 
@@ -17,19 +17,19 @@ Features
 
     Supports MQTT, Socket programming(TCP/ UDP), SNTP, TLS (v1.2), ICMP, IGMP, DNS, DHCP, WPA3, Loading Certificates via UART, WiFi Provisioning.
     
-**Hardware Setup
-**Hardware Requirements
+## Hardware Setup
+### Hardware Requirements
 
     RNWF11 Add On board
     Access Point with Internet
 
-**Solution block diagram
-**Solution Overview
+## Solution block diagram
+### Solution Overview
 
 The Solution code is written as a FreeRTOS based MPLAB Harmony3 solution that leverages the system service-based architecture of PIC32MZ W1. The Solution can connect to any of the three Clouds- AWS, Azure or test.mosquitto.org without the need for recompiling of the image.
 
-**Evaluating the Solution
-**
+## Evaluating the Solution
+
 Perform the following steps:
 
     Connect the RNWF11 Add On board to your PC/ Host MCU.
