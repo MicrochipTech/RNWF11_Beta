@@ -64,9 +64,7 @@ Perform the following steps:
 6. The device connects to the Wi-Fi and the IP address is assigned, and relevant AT Cmd response is sent to UART.
 Example:
 
-        +WSTALU:"42:2C:62:CC:C0:0B",11
-        +WSTAAIP:"192.168.159.108"
-        +TIME:2,3864185092
+        +WSTAAIP:1,"2401:4900:270A:4703:DA47:8FFF:FE68:FAA3"
         
 7. Configure the device to connect to Cloud - in this case either of AWS or Azure or test.mosquitto.org
 Example:
@@ -74,14 +72,27 @@ Example:
         AT+MQTTC=1,"youramazonaws.com"
         AT+MQTTC=2,8883
         AT+MQTTC=3,"yourDeviceId"
+        AT+MQTTC=7,1
+        AT+MQTTC=6,60
         AT+MQTTCONN=1
         
 Note: One needs to register the device certificate with AWS and Azure portal in case the user wants to connect to either of these cloud vendors. More details in Cloud Setup Procedure document.
 
 The device connects to the Cloud, and relevant AT Cmd response is sent to UART.
 
+Below is a sample output which comes on UART when a device connects to AWS cloud. Please refer to the AT Command Reference Manual to get more details about each of the line below.
+
 Example:
 
+        +MQTTPROPRX:33
+        +MQTTPROPRX:36
+        +MQTTPROPRX:37
+        +MQTTPROPRX:39
+        +MQTTPROPRX:34
+        +MQTTPROPRX:40
+        +MQTTPROPRX:41
+        +MQTTPROPRX:42
+        +MQTTPROPRX:19
         +MQTTCONNACK:0,0
         +MQTTCONN:1
         
