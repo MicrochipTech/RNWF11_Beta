@@ -50,26 +50,44 @@ Perform the following steps:
 - Stop : 1 Bit
 - Flow Control : None
 4. All the configurations on the device will be done using AT Cmds via the UART. The details regarding the supported AT CMDs can be found in the document ATCommandReference.pdf in the "doc" folder
-5. Configure the home AP credentials using the AT Cmds
+5. Configure the SNTP details using the AT Cmds
+Please refer to the AT Command reference manual for more details on each of the command below.
+    Example:
+    
+        AT+SNTPC=3,"pool.ntp.org"
+        AT+SNTPC=2,1
+        AT+SNTPC=1,1
+6. Configure the home AP credentials using the AT Cmds
+Please refer to the AT Command reference manual for more details on each of the command below.
     Example:
     
         AT+WSTAC=1,"DEMO_AP"
         AT+WSTAC=2,3
         AT+WSTAC=3,"password"
-        AT+WSTAC=4,255
-        AT+WSTAC=12,"pool.ntp.org"
-        AT+WSTAC=13,1
+        AT+WSTAC=4,0
         AT+WSTA=1
    
-6. The device connects to the Wi-Fi and the IP address is assigned, and relevant AT Cmd response is sent to UART.
+8. The device connects to the Wi-Fi and the IP address is assigned, and relevant AT Cmd response is sent to UART.
+Please refer to the AT Command reference manual for more details on each of the output printed on UART below.
 Example:
 
-        +WSTAAIP:1,"2401:4900:270A:4703:DA47:8FFF:FE68:FAA3"
+        +WSTALU:1,"12:EC:81:FF:DC:77",11
+        +WSTAAIP:1,"192.168.227.179"
+        +WSTAAIP:1,"FE80::DA47:8FFF:FE68:FAA3"
+        +TIME:3909622842
         
-7. Configure the device to connect to Cloud - in this case either of AWS or Azure or test.mosquitto.org
+9. Configure the TLS configuration to be used to connect to Cloud - in this case either of AWS or Azure or test.mosquitto.org
+Example commands to be given while connecting to AWS. Please note that the value to be set in AT+TLSC=1,5 command would depend on the AWS Broker URL with which the device is going to connect. Please refer to the AT Command reference manual for more details on each of the command below.
+
+        AT+TLSC=1,1,"AmazonRootCA1"
+        AT+TLSC=1,5,"aznb5n71crum1-ats.iot.us-east-1.amazonaws.com"
+        AT+TLSC=1,8,1
+
+10. Configure the device to connect to Cloud - in this case either of AWS or Azure or test.mosquitto.org
+Please refer to the AT Command reference manual for more details on each of the command below.
 Example:
 
-        AT+MQTTC=1,"youramazonaws.com"
+        AT+MQTTC=1,"aznb5n71crum1-ats.iot.us-east-1.amazonaws.com"
         AT+MQTTC=2,8883
         AT+MQTTC=3,"yourDeviceId"
         AT+MQTTC=7,1
