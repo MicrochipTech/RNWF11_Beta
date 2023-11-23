@@ -49,6 +49,9 @@ Perform the following steps:
 - Parity : None
 - Stop : 1 Bit
 - Flow Control : None
+- Receive and Transmit needs to be set to CR+LF (See below snapshot on how it is done with Teraterm)
+- ![image](https://github.com/MicrochipTech/RNWF11_Beta/assets/47098770/3ed41f34-6350-4039-89c0-92dac958ec44)
+
 4. All the configurations on the device will be done using AT Cmds via the UART. The details regarding the supported AT CMDs can be found in the document ATCommandReference.pdf in the "doc" folder
 5. Configure the SNTP details using the AT Cmds
 Please refer to the AT Command reference manual for more details on each of the command below.
