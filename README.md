@@ -28,7 +28,7 @@ The RNWF11 Add On Board offers:
 
 ## Documents
 
-- AWS Cloud Setup Procedure.docx - Document describing the procedure to be followed for setting up the AWS Cloud.
+- [AWS Cloud Setup Procedure.docx](https://github.com/MicrochipTech/RNWF11_Beta/blob/main/AWS_Cloud_Setup_Procedure.docx) - Document describing the procedure to be followed for setting up the AWS Cloud.
 - Azure Cloud Setup Procedure.docx - Document describing the procedure to be followed for setting up the Azure Cloud.
 - RNWF11 AT Command Reference Manual.pdf - Document containing details of supported AT commands
 - Reading Serial Number using AT command.docx - Document describing how to read the serial number from the device using an AT command
