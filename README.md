@@ -35,7 +35,7 @@ The RNWF11 Add On Board offers:
 ## Solution block diagram
 ### Solution Overview
 
-The RNWF11 firmware can connect to any of the three Clouds- AWS, Azure or test.mosquitto.org without simple AT configuration commands.
+The RNWF11 firmware can connect to any of the three Clouds- AWS, Azure or test.mosquitto.org with simple AT configuration commands.
 
 ## Evaluating the Solution
 
