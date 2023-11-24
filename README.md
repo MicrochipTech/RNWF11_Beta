@@ -25,7 +25,16 @@ The RNWF11 Add On Board offers:
 4. Designed for RNWF11 module with integrated Trust&Go (TNG) or Trustflex (Trustflex is mounted on the RNWF11 EVB, which makes it very easy for development)
 5. Ready to use RNWF11 module to connect to different cloud vendors by just changing the configuration values (single image supports connectivity with AWS / Azure / test.mosquitto.org)
 6. Supports MQTT, Socket programming(TCP/ UDP), SNTP, TLS (v1.2), ICMP, IGMP, DNS, DHCP, WPA3, Loading Certificates via UART, WiFi Provisioning.
-    
+
+## Documents
+
+- AWS Cloud Setup Procedure.docx - Document describing the procedure to be followed for setting up the AWS Cloud.
+- Azure Cloud Setup Procedure.docx - Document describing the procedure to be followed for setting up the Azure Cloud.
+- RNWF11 AT Command Reference Manual.pdf - Document containing details of supported AT commands
+- Reading Serial Number using AT command.docx - Document describing how to read the serial number from the device using an AT command
+- Reading Certificate using AT command.docx - Document describing how to read the certificate from the device using an AT command
+- Reading Certificate using Python Script.docx - Document describing how to read the serial number from the device using Python script
+
 ## Hardware Setup
 ### Hardware Requirements
 
