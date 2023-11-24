@@ -1,4 +1,4 @@
-# RNWF11_Beta
+# RNWF11
 The Microchip's RNWF11 Wi-Fi™ Modules are an attach solution which can enable Wi-Fi and IoT Cloud
 connectivity on any existing designs. The RNWF11 modules are designed to reduce the user application
 development time by providing ASCII based AT Commands over the UART interface to expose its features and
@@ -52,7 +52,7 @@ Perform the following steps:
 - Receive and Transmit needs to be set to CR+LF (See below snapshot on how it is done with Teraterm)
 - ![image](https://github.com/MicrochipTech/RNWF11_Beta/assets/47098770/3ed41f34-6350-4039-89c0-92dac958ec44)
 
-4. All the configurations on the device will be done using AT Cmds via the UART. The details regarding the supported AT CMDs can be found in the document ATCommandReference.pdf in the "doc" folder
+4. All the configurations on the device will be done using AT Cmds via the UART. The details regarding the supported AT CMDs can be found in the [AT ommand Reference Manual](https://github.com/MicrochipTech/RNWF11_Beta/blob/main/RNWF11%20AT%20Command%20Reference%20Manual.pdf)
 5. Configure the SNTP details using the AT Cmds
 Please refer to the AT Command reference manual for more details on each of the command below.
     Example:
@@ -71,7 +71,7 @@ Please refer to the AT Command reference manual for more details on each of the 
         AT+WSTA=1
    
 8. The device connects to the Wi-Fi and the IP address is assigned, and relevant AT Cmd response is sent to UART.
-Please refer to the AT Command reference manual for more details on each of the output printed on UART below.
+Please refer to the [AT Command reference manual](https://github.com/MicrochipTech/RNWF11_Beta/blob/main/RNWF11%20AT%20Command%20Reference%20Manual.pdf) for more details on each of the output printed on UART below.
 Example:
 
         +WSTALU:1,"12:EC:81:FF:DC:77",11
@@ -87,7 +87,7 @@ Example commands to be given while connecting to AWS. Please note that the value
         AT+TLSC=1,8,1
 
 10. Configure the device to connect to Cloud - in this case either of AWS or Azure or test.mosquitto.org
-Please refer to the AT Command reference manual for more details on each of the command below.
+Please refer to the [AT Command reference manual](https://github.com/MicrochipTech/RNWF11_Beta/blob/main/RNWF11%20AT%20Command%20Reference%20Manual.pdf) for more details on each of the command below.
 Example:
 
         AT+MQTTC=1,"aznb5n71crum1-ats.iot.us-east-1.amazonaws.com"
@@ -101,7 +101,7 @@ Note: One needs to register the device certificate with AWS and Azure portal in 
 
 The device connects to the Cloud, and relevant AT Cmd response is sent to UART.
 
-Below is a sample output which comes on UART when a device connects to AWS cloud. Please refer to the AT Command Reference Manual to get more details about each of the line below.
+Below is a sample output which comes on UART when a device connects to AWS cloud. Please refer to the [AT Command Reference Manual](https://github.com/MicrochipTech/RNWF11_Beta/blob/main/RNWF11%20AT%20Command%20Reference%20Manual.pdf) to get more details about each of the line below.
 
 Example:
 
