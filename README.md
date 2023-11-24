@@ -29,11 +29,11 @@ The RNWF11 Add On Board offers:
 ## Documents
 
 - [AWS Cloud Setup Procedure.docx](https://github.com/MicrochipTech/RNWF11_Beta/blob/main/AWS_Cloud_Setup_Procedure.docx) - Document describing the procedure to be followed for setting up the AWS Cloud.
-- Azure Cloud Setup Procedure.docx - Document describing the procedure to be followed for setting up the Azure Cloud.
-- RNWF11 AT Command Reference Manual.pdf - Document containing details of supported AT commands
-- Reading Serial Number using AT command.docx - Document describing how to read the serial number from the device using an AT command
-- Reading Certificate using AT command.docx - Document describing how to read the certificate from the device using an AT command
-- Reading Certificate using Python Script.docx - Document describing how to read the serial number from the device using Python script
+- [Azure Cloud Setup Procedure.docx](https://github.com/MicrochipTech/RNWF11_Beta/blob/main/Azure_Cloud_Setup_Procedure.docx) - Document describing the procedure to be followed for setting up the Azure Cloud.
+- [RNWF11 AT Command Reference Manual.pdf](https://github.com/MicrochipTech/RNWF11_Beta/blob/main/RNWF11%20AT%20Command%20Reference%20Manual.pdf) - Document containing details of supported AT commands
+- [Reading Serial Number using AT command.docx](https://github.com/MicrochipTech/RNWF11_Beta/blob/main/Reading%20Serial%20Number%20using%20AT%20command.docx) - Document describing how to read the serial number from the device using an AT command
+- [Reading Certificate using AT command.docx](https://github.com/MicrochipTech/RNWF11_Beta/blob/main/Reading%20certificate%20using%20AT%20command.docx) - Document describing how to read the certificate from the device using an AT command
+- [Reading Certificate using Python Script.docx](https://github.com/MicrochipTech/RNWF11_Beta/blob/main/Reading%20certificate%20using%20Python%20Script.docx) - Document describing how to read the serial number from the device using Python script
 
 ## Hardware Setup
 ### Hardware Requirements
