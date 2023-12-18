@@ -115,7 +115,7 @@ class AnyCloud:
     for i in cert_list:
       cert = cert + i +'\r\n'
     #print(cert)
-    f = open("Cert.cer", "w")
+    f = open("Cert.crt", "w")
     f.write(cert)
     f.close()
 
@@ -124,9 +124,9 @@ class AnyCloud:
     print("\r\n\r\nThe common name in the ECC608 certificate is: " + cn + "\r\n")
     
     if os.name == 'posix' :
-      cmd_line = "mv Cert.cer " + cn + ".cer"
+      cmd_line = "mv Cert.crt " + cn + ".crt"
     else:
-      cmd_line = "rename Cert.cer " + cn + ".cer"
+      cmd_line = "rename Cert.crt " + cn + ".crt"
     print(cmd_line)
     p = subprocess.Popen(cmd_line, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     for line in p.stdout.readlines():
